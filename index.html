@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proporção</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1><img src="./img/measuring-cup.png" alt="copo com mediçoes">Proporção</h1>
+        <!-- <p>Peso do adeviso / pelo peso do catalizador</p> -->
+        <p>Padrão: 0.65</p>
+    </header>
+    <form id="form">
+        <input type="text" placeholder="Operador" required id="nomeOperador">
+        <input type="text" placeholder="Turno" maxlength="1" minlength="1" required id="turno">
+        <input type="number" placeholder="Adesivo" step="0.1" maxlength="4" minlength="3" required id="valorAdesivo">
+        <input type="number" placeholder="Catalizador" step="0.1" maxlength="4" minlength="3" required id="valorCatalizador">
+        <button type="submit" id="btn">Proporção</button>
+    </form>
+    <div id="resultado"></div>
+    <table cellspacing="0"">
+        <thead>
+            <tr>
+                <th>Operador</th>
+                <th>Turno</th>
+                <th>Adesivo</th>
+                <th>Catalizador</th>
+                <th>Resultado</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+    <form>
+    <button type="reset" class="btn">Exportar para Excel</button>
+    </form>
+
+</body>
+<script src="./main.js"></script>
+</html>
